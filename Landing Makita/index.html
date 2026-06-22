@@ -23,11 +23,33 @@
     </a>
 
     <nav>
-        <a href="#caracteristicas">Características</a>
-        <a href="#funcionamiento">Funcionamiento</a>
-        <a href="#compatibilidad">Compatibilidad</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <a href="#top">Inicio</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#partes">Partes</a>
+    <a href="#colores">Colores</a>
+    <a href="#cta-final">Comprar</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+<header class="navbar">
+
+  <a href="#top" class="logo">
+    <img src="makita-logo.png" alt="Makita">
+  </a>
+
+  <button class="menu-toggle">☰</button>
+
+  <nav>
+    <a href="#top">Inicio</a>
+    <a href="#caracteristicas">Características</a>
+    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#partes">Partes</a>
+    <a href="#colores">Colores</a>
+    <a href="#cta-final">Comprar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
 </header>
 
@@ -89,8 +111,9 @@
     </div>
 
 </section>
+
 <section id="caracteristicas" class="features">
-  <h2 class="section-title reveal">CARACTERÍSTICAS PRINCIPALES</h2>
+  <h2 class="section-title reveal">CARACTERÍSTICAS</h2>
 
   <div class="features-grid">
 
@@ -120,32 +143,33 @@
 
   </div>
 </section>
+
 <section id="funcionamiento" class="steps-carousel">
   <h2 class="section-title reveal">CÓMO FUNCIONA</h2>
 
   <div class="carousel">
     <div class="slide active">
       <img src="paso1.png" alt="Cargar agua">
-      <h3>PASO 1. CARGÁ AGUA</h3>
+      <h3>1. CARGÁ AGUA</h3>
       <p>Llená el depósito con agua limpia hasta el nivel indicado para asegurar un café perfecto.</p>
     </div>
 
     <div class="slide">
       <img src="paso2.png" alt="Agregar café">
-      <h3>PASO 2. AGREGÁ CAFÉ</h3>
-      <p>Colocá tu café molido favorito en el portafiltro, diseñado para soportar el ritmo de la obra.</p>
+      <h3>2. AGREGÁ CAFÉ</h3>
+      <p>Colocá tu café molido favorito sin marca en el portafiltro reutilizable original.</p>
     </div>
 
     <div class="slide">
       <img src="paso3.png" alt="Instalar batería">
-      <h3>PASO 3. INSTALÁ LA BATERÍA</h3>
-      <p>Encajá la batería Makita LXT en el compartimiento para darle energía a la cafetera.</p>
+      <h3>3. INSTALÁ LA BATERÍA</h3>
+      <p>Encajá la batería Makita LXT en el compartimiento lateral correcto para darle energía.</p>
     </div>
 
     <div class="slide">
       <img src="paso4.png" alt="Disfrutar café">
-      <h3>PASO 4. DISFRUTÁ</h3>
-      <p>En apenas 5 minutos, tu café caliente está listo para acompañar la jornada.</p>
+      <h3>4. DISFRUTÁ</h3>
+      <p>En apenas 5 minutos, tu café caliente está listo en la taza de acero original Makita.</p>
     </div>
   </div>
 
@@ -154,90 +178,142 @@
     <button class="next">›</button>
   </div>
 </section>
-<section class="exploded reveal">
 
-    <div class="exploded-text">
+<section id="partes" class="exploded reveal">
+    <div class="exploded-wrapper">
 
-        <h2>
-            DISEÑADA<br>
-            PARA DURAR
-        </h2>
+<img src="partes sin fondo.png"
+     alt="Partes Makita DCM501"
+     class="exploded-product">
 
-        <ul>
-            <li>Asa de transporte</li>
-            <li>Depósito de agua</li>
-            <li>Portafiltro</li>
-            <li>Soporte de taza</li>
-            <li>Compartimiento de batería</li>
-        </ul>
 
+<div class="part deposito part-left">
+
+    <button class="hotspot" onclick="toggleSpec('spec1')">
+        Depósito de agua
+        <span></span>
+    </button>
+
+    <div id="spec1" class="spec-box">
+        Tanque extraíble de 240 ml. Permite cargar agua rápidamente y facilita la limpieza.
     </div>
 
-    <div class="exploded-image">
-        <img src="exploded-view.png" alt="">
+</div>
+
+<div class="part cuchara part-left">
+
+    <button class="hotspot" onclick="toggleSpec('spec2')">
+        Cuchara medidora
+        <span></span>
+    </button>
+
+    <div id="spec2" class="spec-box">
+        Dosificación precisa para preparar una taza sin desperdiciar café.
     </div>
+
+</div>
+
+<div class="part bateria part-left">
+
+    <button class="hotspot" onclick="toggleSpec('spec5')">
+        Batería LXT
+        <span></span>
+    </button>
+
+    <div id="spec5" class="spec-box">
+        Compatible con baterías Makita 18V LXT utilizadas en herramientas profesionales.
+    </div>
+
+</div>
+
+<div class="part filtro part-right">
+
+    <button class="hotspot" onclick="toggleSpec('spec3')">
+        <span></span>
+        Filtro permanente
+    </button>
+
+    <div id="spec3" class="spec-box">
+        Filtro reutilizable de acero inoxidable. No requiere filtros descartables.
+    </div>
+
+</div>
+
+<div class="part taza part-right">
+
+    <button class="hotspot" onclick="toggleSpec('spec4')">
+        <span></span>
+        Taza de acero inoxidable
+    </button>
+
+    <div id="spec4" class="spec-box">
+        Incluida con la cafetera. Conserva mejor la temperatura durante el uso.
+    </div>
+
+</div>
 
 </section>
-
 <section class="quote">
 
     <div class="quote-overlay"></div>
 
     <h2>
-        CONSTRUIDA PARA LA OBRA.<br>
-        DISEÑADA PARA EL CAFÉ.
-    </h2>
+    TU CAFÉ LISTO<br>
+    EN CUALQUIER LUGAR
+</h2>
 
 </section>
 
-<section id="compatibilidad" class="compatibility reveal">
 
-    <div class="compatibility-image">
-        <img src="battery.jpg" alt="">
-    </div>
+<section id="colores" class="colors-section">
+    <div class="colors-container">
 
-    <div class="compatibility-text">
+        <div class="product-view">
 
-        <h2>
-            UNA BATERÍA.<br>
-            MÁS POSIBILIDADES.
-        </h2>
+            <div class="product-frame">
+                <img id="coffeeMachine"
+                     src="makita-azul.png"
+                     alt="Makita Azul">
+            </div>
 
-        <p>
-            Compatible con baterías Makita LXT, permitiendo integrarse fácilmente a tu ecosistema de herramientas.
-        </p>
+        </div>
+
+        <div class="color-selector">
+
+            <h2 class="section-title colors-title">
+    ELEGÍ LA QUE<br>
+    MÁS TE GUSTE
+</h2>
+
+            <button class="color-option active"
+                    data-image="makita-azul.png">
+
+                <span class="color-swatch makita-blue"></span>
+                <span class="color-name">Azul Makita</span>
+
+            </button>
+
+            <button class="color-option"
+                    data-image="makita-bordo.png">
+
+                <span class="color-swatch makita-red"></span>
+                <span class="color-name">Rojo vino</span>
+
+            </button>
+
+            <button class="color-option"
+                    data-image="makita-verde.png">
+
+                <span class="color-swatch makita-green"></span>
+                <span class="color-name">Verde oliva</span>
+
+            </button>
+
+        </div>
 
     </div>
 
 </section>
-
-<section class="uses">
-
-    <h2 class="section-title reveal">
-        LISTA PARA CUALQUIER ENTORNO
-    </h2>
-
-    <div class="uses-grid">
-
-        <article class="use-card">
-            <img src="obra.jpg" alt="">
-            <span>OBRA</span>
-        </article>
-
-        <article class="use-card">
-            <img src="taller.jpg" alt="">
-            <span>TALLER</span>
-        </article>
-
-        <article class="use-card">
-            <img src="exterior.jpg" alt="">
-            <span>EXTERIOR</span>
-        </article>
-
-    </div>
-
-</section>
-
 <section id="cta-final" class="final-cta">
 
     <h2>
@@ -269,6 +345,7 @@
     </div>
 
 </footer>
+
 <script>
 const slides = document.querySelectorAll('.slide');
 let current = 0;
@@ -288,30 +365,86 @@ document.querySelector('.prev').addEventListener('click', () => {
   current = (current - 1 + slides.length) % slides.length;
   showSlide(current);
 });
+
+// Sistema de scroll (reveal)
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('active');
+    }
+  });
+});
+reveals.forEach(el => observer.observe(el));
 </script>
-
-</body>
-</html>
-
 <script>
 
-const reveals = document.querySelectorAll('.reveal');
+function toggleSpec(id){
 
-const observer = new IntersectionObserver(entries => {
+document.querySelectorAll('.spec-box').forEach(box=>{
 
-entries.forEach(entry => {
-
-if(entry.isIntersecting){
-entry.target.classList.add('active');
+if(box.id !== id){
+box.classList.remove('active');
 }
 
 });
 
-});
+document.getElementById(id).classList.toggle('active');
 
-reveals.forEach(el => observer.observe(el));
+}
 
 </script>
+<script>
 
+const colorButtons =
+document.querySelectorAll('.color-option');
+
+const machineImage =
+document.getElementById('coffeeMachine');
+
+colorButtons.forEach(button=>{
+
+button.addEventListener('click',()=>{
+
+colorButtons.forEach(btn=>
+btn.classList.remove('active')
+);
+
+button.classList.add('active');
+
+machineImage.src =
+button.dataset.image;
+
+});
+
+});
+
+</script>
+<script>
+
+const navbar = document.querySelector('.navbar');
+
+let navbarActivated = false;
+
+window.addEventListener('scroll', () => {
+
+    if (!navbarActivated && window.scrollY > 50) {
+
+        navbar.classList.add('visible');
+        navbarActivated = true;
+
+    }
+
+});
+
+</script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+</script>
 </body>
 </html>
